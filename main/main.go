@@ -52,7 +52,22 @@ func getAlbumById(c *gin.Context) {
 			return
 		}
 	}
+	t := testBits(16)
 
-	c.IndentedJSON(http.StatusNotFound, gin.H{"mesagge": "Id no encontrado"})
+	c.IndentedJSON(http.StatusNotFound, gin.H{"mesagge": "Id no encontrado", "bits": t})
+}
 
+func testBits(numero int) []int {
+	var arr []int
+	arr = make([]int, numero)
+	z := 0
+	for i := range arr {
+		if i > 0 {
+			z = arr[i-1] * 2
+		} else {
+			z = 1
+		}
+		arr[i] = z
+	}
+	return arr
 }
