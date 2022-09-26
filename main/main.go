@@ -24,7 +24,6 @@ func main() {
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumById)
 	router.POST("/albums", postAlbums)
-
 	router.Run("localhost:8080")
 }
 
@@ -53,7 +52,6 @@ func getAlbumById(c *gin.Context) {
 		}
 	}
 	t := testBits(16)
-	// comment
 	c.IndentedJSON(http.StatusNotFound, gin.H{"mesagge": "Id no encontrado", "bits": t})
 }
 
