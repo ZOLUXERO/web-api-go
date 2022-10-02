@@ -5,3 +5,7 @@ go mod init github.com/ZOLUXERO/web-api-go -- init and create go.mod file es com
 go get "github.com/jinzhu/gorm" -- maneja la base de datos
 go get "github.com/jinzhu/gorm/dialects/mysql"
 go get "github.com/gorilla/mux"
+
+cd cmd/main
+go build
+go run main.go
