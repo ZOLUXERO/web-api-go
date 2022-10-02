@@ -9,3 +9,5 @@ go get "github.com/gorilla/mux"
 cd cmd/main
 go build
 go run main.go
+
+crear la db (simplerest) y probar en la url http://localhost:9010/books
