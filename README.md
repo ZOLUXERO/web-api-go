@@ -1,5 +1,5 @@
 # web-api-go
-### Aplicacion web sencilla que consta de un crud para una tienda de libros (Proyecto poli 2022)
+### Aplicacion web sencilla que consta de un crud para una tienda de libros (Proyecto poli 2022.)
 # Comandos de la aplicacion
 
 git remote set-url origin https://user:pass@github.com/USER/project.git
